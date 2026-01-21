@@ -1,0 +1,109 @@
+/* ServiceList.module.css */
+.title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #2b2d42; /* Цвет заголовка */
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Убираем маркеры у списка */
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.serviceInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-grow: 1;
+}
+
+.serviceName {
+  font-size: 16px;
+  font-weight: 500;
+  color: #212529; /* Цвет названия услуги */
+}
+
+.servicePrice {
+  font-size: 14px;
+  color: #40c057; /* Цвет цены */
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.editButton, .deleteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.editButton {
+  color: #228be6; /* Цвет кнопки редактирования */
+  background-color: #e7f5ff; /* Фоновый цвет кнопки редактирования */
+}
+
+.editButton:hover {
+  background-color: #d0ebff; /* Цвет при наведении */
+  transform: scale(1.1); /* Увеличение при наведении */
+}
+
+.deleteButton {
+  color: #fa5252; /* Цвет кнопки удаления */
+  background-color: #fff5f5; /* Фоновый цвет кнопки удаления */
+}
+
+.deleteButton:hover {
+  background-color: #ffe3e3; /* Цвет при наведении */
+  transform: scale(1.1); /* Увеличение при наведении */
+}
+
+/* Дополнительные стили для статистики в ServiceFilter */
+.statistics {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #6c757d; /* Цвет текста статистики */
+}
+
+/* Стили для кнопки очистки в ServiceFilter */
+.clearButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #dc3545; /* Цвет кнопки очистки */
+  font-size: 18px;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.clearButton:hover {
+  color: #c82333; /* Цвет при наведении */
+}

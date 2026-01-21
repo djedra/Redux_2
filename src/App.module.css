@@ -1,0 +1,171 @@
+/* App.module.css */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s; /* Добавляем анимацию при наведении */
+}
+
+.container:hover {
+  transform: scale(1.02); /* Увеличиваем контейнер при наведении */
+}
+
+.title {
+  color: #2b2d42;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 15px;
+  text-transform: uppercase; /* Делаем текст заглавными буквами */
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #4dabf7, #160894);
+  border-radius: 2px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3e98e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+.button:hover {
+  background-color: #1f22ce; /* Изменение цвета при наведении */
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Дополнительные стили для форм и списков */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Расстояние между элементами формы */
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%; /* Заполнение доступного пространства */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s; /* Плавный переход цвета границы */
+}
+
+.input:focus {
+  border-color: #3e98e2; /* Цвет границы при фокусе */
+  outline: none; /* Убираем стандартное обводка */
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px; /* Уменьшаем пространство над сообщением об ошибке */
+  margin-bottom: 10px; /* Добавляем пространство под сообщением об ошибке */
+}
+
+/* Стили для списков услуг */
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Убираем маркеры у списка */
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.serviceInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-grow: 1;
+}
+
+.serviceName {
+  font-size: 16px;
+  font-weight: 500;
+  color: #212529;
+}
+
+.servicePrice {
+  font-size: 14px;
+  color: #40c057;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.editButton, .deleteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.editButton {
+  color: #228be6;
+  background-color: #e7f5ff;
+}
+
+.editButton:hover {
+  background-color: #d0ebff;
+  transform: scale(1.1);
+}
+
+.deleteButton {
+  color: #fa5252;
+  background-color: #fff5f5;
+}
+
+.deleteButton:hover {
+  background-color: #ffe3e3;
+  transform: scale(1.1);
+}

@@ -1,0 +1,68 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input {
+  padding: 12px 15px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #4dabf7;
+  box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.2);
+}
+
+.button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.saveButton {
+  background-color: #1d1aa8;
+  color: white;
+}
+
+.saveButton:hover {
+  background-color: #2b40bb;
+  transform: translateY(-1px);
+}
+
+.cancelButton {
+  background-color: #f1f3f5;
+  color: #495057;
+}
+
+.cancelButton:hover {
+  background-color: #e9ecef;
+  transform: translateY(-1px);
+}
+
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #343a40;
+}

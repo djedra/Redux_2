@@ -1,0 +1,98 @@
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Убираем маркеры у списка */
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.serviceInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-grow: 1;
+}
+
+.serviceName {
+  font-size: 16px;
+  font-weight: 500;
+  color: #212529;
+}
+
+.servicePrice {
+  font-size: 12px;
+  color: #0e27b6;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: relative; /* Для эффекта при наведении */
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1); /* Легкий эффект затемнения */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.button:hover::after {
+  opacity: 1; /* Появление эффекта при наведении */
+}
+
+.editButton {
+  composes: button;
+  color: #228be6;
+  background-color: #e7f5ff;
+}
+
+.editButton:hover {
+  background-color: #d0ebff;
+  transform: scale(1.1);
+}
+
+.deleteButton {
+  composes: button;
+  color: #fa5252;
+  background-color: #fff5f5;
+}
+
+.deleteButton:hover {
+  background-color: #ffe3e3;
+  transform: scale(1.1);
+}
