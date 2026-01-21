@@ -1,4 +1,3 @@
-/* App.module.css */
 .container {
   max-width: 800px;
   margin: 40px auto;
@@ -6,11 +5,11 @@
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s; /* Добавляем анимацию при наведении */
+  transition: transform 0.2s; 
 }
 
 .container:hover {
-  transform: scale(1.02); /* Увеличиваем контейнер при наведении */
+  transform: scale(1.02); 
 }
 
 .title {
@@ -21,7 +20,7 @@
   font-weight: 600;
   position: relative;
   padding-bottom: 15px;
-  text-transform: uppercase; /* Делаем текст заглавными буквами */
+  text-transform: uppercase; 
 }
 
 .title::after {
@@ -46,11 +45,11 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s; /* Плавный переход цвета */
+  transition: background-color 0.3s; 
 }
 
 .button:hover {
-  background-color: #1f22ce; /* Изменение цвета при наведении */
+  background-color: #1f22ce; 
 }
 
 .error-message {
@@ -59,11 +58,11 @@
   margin-top: 10px;
 }
 
-/* Дополнительные стили для форм и списков */
+
 .form {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Расстояние между элементами формы */
+  gap: 15px; 
 }
 
 .input {
@@ -71,28 +70,28 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-  width: 100%; /* Заполнение доступного пространства */
+  width: 100%; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: border-color 0.3s; /* Плавный переход цвета границы */
+  transition: border-color 0.3s; 
 }
 
 .input:focus {
-  border-color: #3e98e2; /* Цвет границы при фокусе */
-  outline: none; /* Убираем стандартное обводка */
+  border-color: #3e98e2; 
+  outline: none; 
 }
 
 .error {
   color: red;
   font-size: 14px;
-  margin-top: -10px; /* Уменьшаем пространство над сообщением об ошибке */
-  margin-bottom: 10px; /* Добавляем пространство под сообщением об ошибке */
+  margin-top: -10px; 
+  margin-bottom: 10px; 
 }
 
-/* Стили для списков услуг */
+
 .list {
   padding: 0;
   margin: 0;
-  list-style-type: none; /* Убираем маркеры у списка */
+  list-style-type: none; 
 }
 
 .item {

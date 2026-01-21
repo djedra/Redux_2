@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import styles from './ServiceList.module.css'; // Убедитесь, что путь к CSS правильный
+import styles from './ServiceList.module.css'; 
 import { startEditService, removeService } from '../../store/actions';
 
 export default function ServiceList({ services }) {

@@ -1,4 +1,3 @@
-// reducer.js
 import {
   ADD_SERVICE,
   EDIT_SERVICE,

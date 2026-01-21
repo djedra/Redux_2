@@ -1,4 +1,3 @@
-// actions.js
 export const ADD_SERVICE = 'ADD_SERVICE';
 export const EDIT_SERVICE = 'EDIT_SERVICE';
 export const CANCEL_EDIT = 'CANCEL_EDIT';

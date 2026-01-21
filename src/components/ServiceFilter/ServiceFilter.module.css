@@ -1,14 +1,13 @@
-/* ServiceList.module.css */
 .title {
   font-size: 20px;
   margin-bottom: 15px;
-  color: #2b2d42; /* Цвет заголовка */
+  color: #2b2d42; 
 }
 
 .list {
   padding: 0;
   margin: 0;
-  list-style-type: none; /* Убираем маркеры у списка */
+  list-style-type: none; 
 }
 
 .item {
@@ -38,12 +37,12 @@
 .serviceName {
   font-size: 16px;
   font-weight: 500;
-  color: #212529; /* Цвет названия услуги */
+  color: #212529; 
 }
 
 .servicePrice {
   font-size: 14px;
-  color: #40c057; /* Цвет цены */
+  color: #40c057; 
   font-weight: bold;
 }
 
@@ -67,43 +66,43 @@
 }
 
 .editButton {
-  color: #228be6; /* Цвет кнопки редактирования */
-  background-color: #e7f5ff; /* Фоновый цвет кнопки редактирования */
+  color: #228be6; 
+  background-color: #e7f5ff; 
 }
 
 .editButton:hover {
-  background-color: #d0ebff; /* Цвет при наведении */
-  transform: scale(1.1); /* Увеличение при наведении */
+  background-color: #d0ebff; 
+  transform: scale(1.1); 
 }
 
 .deleteButton {
-  color: #fa5252; /* Цвет кнопки удаления */
-  background-color: #fff5f5; /* Фоновый цвет кнопки удаления */
+  color: #fa5252;
+  background-color: #fff5f5; 
 }
 
 .deleteButton:hover {
-  background-color: #ffe3e3; /* Цвет при наведении */
-  transform: scale(1.1); /* Увеличение при наведении */
+  background-color: #ffe3e3; 
+  transform: scale(1.1); 
 }
 
-/* Дополнительные стили для статистики в ServiceFilter */
+
 .statistics {
   margin-top: 10px;
   font-size: 14px;
-  color: #6c757d; /* Цвет текста статистики */
+  color: #6c757d; 
 }
 
-/* Стили для кнопки очистки в ServiceFilter */
+
 .clearButton {
   background: none;
   border: none;
   cursor: pointer;
-  color: #dc3545; /* Цвет кнопки очистки */
+  color: #dc3545; 
   font-size: 18px;
   margin-left: 10px;
   transition: color 0.3s ease;
 }
 
 .clearButton:hover {
-  color: #c82333; /* Цвет при наведении */
+  color: #c82333;
 }

@@ -8,7 +8,7 @@ export default function ServiceForm() {
   const [price, setPrice] = useState('');
   const [errors, setErrors] = useState({ name: '', price: '' });
   const editing = useSelector((state) => state.editing);
-  const servicesCount = useSelector((state) => state.services.length); // Предполагается, что у вас есть массив услуг в состоянии
+  const servicesCount = useSelector((state) => state.services.length); 
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function ServiceForm() {
       setName(editing.name);
       setPrice(editing.price.toString());
     } else {
-      // Сброс значений при отсутствии редактирования
+      
       setName('');
       setPrice('');
       setErrors({ name: '', price: '' });
@@ -38,7 +38,7 @@ export default function ServiceForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!validateForm()) {
-      return; // Если есть ошибки, не отправляем форму
+      return; 
     }
 
     if (editing) {
@@ -47,7 +47,7 @@ export default function ServiceForm() {
       dispatch(addService(name, parseFloat(price)));
     }
 
-    // Сброс значений и ошибок после успешного добавления/редактирования
+    
     setName('');
     setPrice('');
     setErrors({ name: '', price: '' });
@@ -57,7 +57,7 @@ export default function ServiceForm() {
     dispatch(cancelEdit());
     setName('');
     setPrice('');
-    setErrors({ name: '', price: '' }); // Сброс ошибок при отмене
+    setErrors({ name: '', price: '' }); 
   };
 
   return (

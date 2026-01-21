@@ -1,12 +1,12 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import styles from './App.module.css'; // Убедитесь, что путь к CSS правильный
-import { ServiceForm, ServiceList, ServiceFilter } from './components'; // Убедитесь, что путь к компонентам правильный
+import styles from './App.module.css'; 
+import { ServiceForm, ServiceList, ServiceFilter } from './components'; 
 
 export default function App() {
   const { services, filter } = useSelector((state) => state);
 
-  // Фильтрация услуг на основе введенного фильтра
+  
   const filteredServices = filter
     ? services.filter(service => 
         service.name.toLowerCase().includes(filter.toLowerCase()))
